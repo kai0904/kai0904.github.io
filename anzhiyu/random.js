@@ -1,3 +1,3 @@
-var posts=["2025/07/29/Leetcode169/"];function toRandomPost(){
+var posts=["2025/07/30/Leetcode268/","2025/07/29/Leetcode169/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
