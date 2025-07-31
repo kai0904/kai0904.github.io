@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Leetcode58</title>
+      <link href="/2025/07/31/Leetcode58/"/>
+      <url>/2025/07/31/Leetcode58/</url>
+      
+        <content type="html"><![CDATA[<h2 id="題目資訊"><a href="#題目資訊" class="headerlink" title="題目資訊"></a>題目資訊</h2><ul><li>題號：LeetCode 268  </li><li>難度：#Easy</li></ul><h2 id="題目說明"><a href="#題目說明" class="headerlink" title="題目說明"></a>題目說明</h2><p>算出最後一個單詞的數量</p><hr><h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: s = <span class="string">&#x27;Hello World&#x27;</span></span><br><span class="line">Output: <span class="number">5</span></span><br></pre></td></tr></table></figure><h2 id="🔍-解題思路"><a href="#🔍-解題思路" class="headerlink" title="🔍 解題思路"></a>🔍 解題思路</h2><ol><li>把文字拆開 </li><li>吧空格刪掉 <ul><li>因爲 有可能最後一個為空格</li></ul></li><li>str 最後一個，算數量<br>✅ 完整程式碼（原始解法）</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">lis = s.split()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> lis:</span><br><span class="line">    <span class="keyword">if</span> i ==<span class="string">&quot; &quot;</span>:</span><br><span class="line">        <span class="keyword">del</span> lis[i]</span><br><span class="line">    las = <span class="built_in">str</span>(<span class="built_in">list</span>[-<span class="number">1</span>])</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">len</span>(las)</span><br></pre></td></tr></table></figure><h2 id="參考他人"><a href="#參考他人" class="headerlink" title="參考他人"></a>參考他人</h2><table><thead><tr><th>方法</th><th>用途說明</th><th>範例程式碼</th></tr></thead><tbody><tr><td>strip</td><td>移除字串前後的空格</td><td><code>list.strip()</code></td></tr></tbody></table><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">lengthOfLastWord</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">    words = s.strip().split()</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> words:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">len</span>(words[-<span class="number">1</span>])</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 解題_Python_Leetcode_Easy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Leetcode268</title>
       <link href="/2025/07/30/Leetcode268/"/>
       <url>/2025/07/30/Leetcode268/</url>
